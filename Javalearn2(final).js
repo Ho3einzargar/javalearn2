@@ -1,28 +1,15 @@
-class User{
-constructor(username , password){
-    this.username=prompt("Hello pls enter username");
-    if(this.username=="",this.username=='username'){
-        alert("pls enter your username");
-        this.username=prompt("Hello pls enter username");
+class Animal{
+    name = 'animal';
+    constructor(){
+       alert(this.name); 
     }
-    else{
-        this.password=prompt("Hello pls enter password");
-
-    }
-
-
 }
-sayuser(){
-    alert( "username : " + `${this.username}` + "  password : " + `${this.password}`);   
+class Rabbit extends Animal{
+    name = 'rabbit';
 }
 
-
-}
-let user = new User();
-user.sayuser();
-
-
-
+new Animal();
+new Rabbit();
 
 
 
