@@ -1,0 +1,2 @@
+alert("salam");
+alert("ss");
