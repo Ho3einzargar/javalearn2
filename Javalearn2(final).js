@@ -6,10 +6,10 @@ class Animal{
 }
 class Rabbit extends Animal{
     name = 'rabbit';
+    
 }
-
 new Animal();
-new Rabbit();
+new Rabbit("salam");
 
 
 
