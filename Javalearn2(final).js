@@ -1,15 +1,20 @@
 class Animal{
-    name = 'animal';
+    
+    showname(){
+        alert("Animal");
+    }
+
     constructor(){
-       alert(this.name); 
+        this.showname();
     }
 }
 class Rabbit extends Animal{
-    name = 'rabbit';
-    
+    showname(){
+        alert('rabbit');
+    }
 }
 new Animal();
-new Rabbit("salam");
+new Rabbit();
 
 
 
