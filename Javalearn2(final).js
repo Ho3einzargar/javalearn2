@@ -1,21 +1,31 @@
-class Animal{
-    
-    showname(){
-        alert("Animal");
+let Animal = {
+    sayhi(){
+        alert('im an Animal');
+    }
+};
+let Rabbit = {
+    __proto__ : Animal,
+    sayhi(){
+    alert('im an Animal');
+    }
+};
+let plant = {
+    sayhi(){
+        alert('im a plant');
+    }
+};
+
+
+
+let tree = {
+    __proto__ : plant,
+    sayhi(){
+        alert('im a plant');
     }
 
-    constructor(){
-        this.showname();
-    }
-}
-class Rabbit extends Animal{
-    showname(){
-        alert('rabbit');
-    }
-}
-new Animal();
-new Rabbit();
+};
 
-
+Rabbit.sayhi();
+tree.sayhi();
 
 
